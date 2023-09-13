@@ -42,7 +42,6 @@ architecture behavioral of yoko_vfbc_backend is
   signal new_frame : std_logic;
   signal pxlclk : std_logic;
   signal new_stripe : std_logic := '0';
-  signal stripe_cnt : std_logic_vector(15 downto 0) := (others => '0');
   signal buffer_toggle : std_logic := '0';
   signal pixel_de : std_logic;
   signal pixel_delay_1 : std_logic;
@@ -51,8 +50,6 @@ architecture behavioral of yoko_vfbc_backend is
 
   signal vfbc_cmd_data_i : std_logic_vector(31 downto 0) := (others => '0');
   signal vfbc_cmd_write_i : std_logic := '0';
-
-  signal vfbc_cmd_cnt : std_logic_vector(31 downto 0) := (others => '0');
 
   signal vfbc_cmd0 : std_logic_vector(31 downto 0);
   signal vfbc_cmd1 : std_logic_vector(31 downto 0);
@@ -102,7 +99,6 @@ begin
         wColumn <= "0000000001";
         rLine <= "11111";
         rColumn <= (others => '0');
-        stripe_cnt <= (others => '0');
         new_stripe <= '0';
         vfbc_cmd_data_i <= (others => '0');
         vfbc_cmd_write_i <= '0';
@@ -148,7 +144,6 @@ begin
           else
             wColumn <= "0000000001";
             wLine <= (others => '0');
-            stripe_cnt <= stripe_cnt + 1;
             new_stripe <= '1';
             frame_base_addr <= frame_base_addr - x"00000080";
           end if;
