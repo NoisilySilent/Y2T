@@ -96,8 +96,8 @@ begin
     if rising_edge(pxlclk) then
       if (new_frame = '1') then
         wLine <= (others => '0');
-        wColumn <= "0000000001";
-        rLine <= "11111";
+        wColumn <= (others => '0');
+        rLine <= (others => '1');
         rColumn <= (others => '0');
         new_stripe <= '0';
         vfbc_cmd_data_i <= (others => '0');
@@ -133,7 +133,7 @@ begin
           vfbc_cmd_write_i <= '0';
         end if;
         -- WRITE LOGIC --
-        if (((wColumn < 639) and (wLine > 0)) or ((wColumn < 640) and (wLine = 0))) then
+        if (wColumn < 639) then
           wColumn <= wColumn + 1;
           new_stripe <= '0';
         else
@@ -142,7 +142,7 @@ begin
             wLine <= wLine + 1;
             new_stripe <= '0';
           else
-            wColumn <= "0000000001";
+            wColumn <= (others => '0');
             wLine <= (others => '0');
             new_stripe <= '1';
             frame_base_addr <= frame_base_addr - x"00000080";
@@ -152,7 +152,7 @@ begin
         if (rLine > 0) then
           rLine <= rLine - 1;
         else
-          rLine <= "11111";
+          rLine <= (others => '1')";
           if (rColumn < 639) then
             rColumn <= rColumn + 1;
           else
@@ -219,7 +219,7 @@ begin
   -- VFBC Write Logic
   --------------------------------
 
-  YOKO_VFBC_WD_WRITE <= pixel_de;
+  YOKO_VFBC_WD_WRITE <= YOKO_DE;
   YOKO_VFBC_WD_DATA <= pixel_dout;
 
   YOKO_DE_DELAY_PROC : process (pxlclk) is
