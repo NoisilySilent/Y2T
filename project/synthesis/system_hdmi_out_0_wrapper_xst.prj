@@ -1,0 +1,13 @@
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/DRAM16XN.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/convert_30to15_fifo.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/encode.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/decode.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/serdes_1_to_5_diff_data.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/serdes_n_to_1.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/dvi_encoder.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/dvi_decoder.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/dvi_out_native.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/chnlbond.v
+verilog hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/verilog/phsaligner.v
+vhdl hdmi_out_v1_00_a /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/hdmi_out_v1_00_a/hdl/vhdl/hdmi_out.vhd
+vhdl work ../hdl/system_hdmi_out_0_wrapper.vhd

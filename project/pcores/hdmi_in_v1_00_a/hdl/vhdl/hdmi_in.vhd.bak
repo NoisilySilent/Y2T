@@ -1,0 +1,91 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+library proc_common_v3_00_a;
+use proc_common_v3_00_a.proc_common_pkg.all;
+use proc_common_v3_00_a.ipif_pkg.all;
+
+library plbv46_slave_single_v1_01_a;
+use plbv46_slave_single_v1_01_a.plbv46_slave_single;
+
+library hdmi_in_v1_00_a;
+use hdmi_in_v1_00_a.user_logic;
+
+entity hdmi_in is
+  port
+  (
+    TMDS           : in std_logic_vector(3 downto 0);
+    TMDSB          : in std_logic_vector(3 downto 0);
+    SW			    : in std_logic_vector(3 downto 0);
+    LED			    : out std_logic;
+    FB_SELECT      : out std_logic_vector(1 downto 0);
+    OUT_PXL_CNT    : out std_logic_vector(31 downto 0);
+    -- VFBC Command Signals
+	  VFBC_CMD_CLK : out std_logic;
+	  VFBC_CMD_IDLE : in std_logic;
+	  VFBC_CMD_RESET : out std_logic;
+	  VFBC_CMD_DATA : out std_logic_vector (31 downto 0);
+	  VFBC_CMD_WRITE : out std_logic;
+	  VFBC_CMD_END : out std_logic;
+	  VFBC_CMD_FULL : in std_logic;
+	  VFBC_CMD_ALMOST_FULL : in std_logic;
+	  -- VFBC Write Signals
+	  VFBC_WD_CLK : out std_logic;
+	  VFBC_WD_RESET : out std_logic;
+	  VFBC_WD_FLUSH : out std_logic;
+	  VFBC_WD_WRITE : out std_logic;
+	  VFBC_WD_DATA : out std_logic_vector (15 downto 0);
+	  VFBC_WD_DATA_BE : out std_logic_vector (1 downto 0);
+	  VFBC_WD_END_BURST : out std_logic;
+	  VFBC_WD_FULL : in std_logic;
+	  VFBC_WD_ALMOST_FULL : in std_logic;
+  );
+
+end entity hdmi_in;
+
+------------------------------------------------------------------------------
+-- Architecture section
+------------------------------------------------------------------------------
+
+architecture IMP of hdmi_in is
+
+begin
+
+  ------------------------------------------
+  -- instantiate User Logic
+  ------------------------------------------
+  USER_LOGIC_I : entity hdmi_in_v1_00_a.user_logic
+    port map
+    (
+    TMDS           => TMDS,
+    TMDSB          => TMDSB,
+    SW             => SW,
+    LED            => LED,
+    FB_SELECT      => FB_SELECT,
+    OUT_PXL_CNT    => OUT_PXL_CNT,
+     -- VFBC Command Signals
+	  VFBC_CMD_CLK         => VFBC_CMD_CLK,
+	  VFBC_CMD_IDLE        => VFBC_CMD_IDLE,
+	  VFBC_CMD_RESET       => VFBC_CMD_RESET,
+	  VFBC_CMD_DATA        => VFBC_CMD_DATA,
+	  VFBC_CMD_WRITE       => VFBC_CMD_WRITE,
+	  VFBC_CMD_END         => VFBC_CMD_END,
+	  VFBC_CMD_FULL        => VFBC_CMD_FULL,
+	  VFBC_CMD_ALMOST_FULL => VFBC_CMD_ALMOST_FULL,
+	   -- VFBC Write Signals
+	  VFBC_WD_CLK          => VFBC_WD_CLK,
+	  VFBC_WD_RESET        => VFBC_WD_RESET,
+	  VFBC_WD_FLUSH        => VFBC_WD_FLUSH,
+	  VFBC_WD_WRITE        => VFBC_WD_WRITE,
+	  VFBC_WD_DATA         => VFBC_WD_DATA,
+	  VFBC_WD_DATA_BE      => VFBC_WD_DATA_BE,
+	  VFBC_WD_END_BURST    => VFBC_WD_END_BURST,
+	  VFBC_WD_FULL         => VFBC_WD_FULL,
+	  VFBC_WD_ALMOST_FULL  => VFBC_WD_ALMOST_FULL,
+      -- MAP USER PORTS ABOVE THIS LINE ------------------
+
+    );
+
+end IMP;

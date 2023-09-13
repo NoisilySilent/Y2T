@@ -1,0 +1,7 @@
+-batch 
+-create edid_emu 
+-ver 1.00.a 
+-dir "/opt/Xilinx/Projects/PLB_EDID" 
+-lang vhdl 
+-bus plbv46 ms 
+-xps 

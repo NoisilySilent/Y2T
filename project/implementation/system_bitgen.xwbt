@@ -1,0 +1,7 @@
+INFILE=/opt/Xilinx/Projects/HDMI_Rotator/project/implementation/system.ncd
+OUTFILE=/opt/Xilinx/Projects/HDMI_Rotator/project/implementation/system.bit
+FAMILY=Spartan6
+PART=xc6slx45-2csg324
+WORKINGDIR=/opt/Xilinx/Projects/HDMI_Rotator/project/implementation
+LICENSE=WebPack
+USER_INFO=__0_0_0

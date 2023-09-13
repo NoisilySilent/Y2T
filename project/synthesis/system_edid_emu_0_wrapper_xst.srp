@@ -1,0 +1,1756 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /opt/Xilinx/Projects/HDMI_Rotator/project/synthesis/xst_temp_dir/
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input Format                       : MIXED
+Input File Name                    : "system_edid_emu_0_wrapper_xst.prj"
+Verilog Include Directory          : {"/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxBFMinterface/pcores/" "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/" }
+
+---- Target Parameters
+Target Device                      : xc6slx45csg324-2
+Output File Name                   : "../implementation/system_edid_emu_0_wrapper.ngc"
+
+---- Source Options
+Top Module Name                    : system_edid_emu_0_wrapper
+
+---- Target Options
+Add IO Buffers                     : NO
+
+---- General Options
+Optimization Goal                  : speed
+Netlist Hierarchy                  : as_optimized
+Optimization Effort                : 1
+Hierarchy Separator                : /
+
+---- Other Options
+Cores Search Directories           : {../implementation}
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plb_address_decoder>.
+Parsing architecture <IMP> of entity <plb_address_decoder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plb_slave_attachment>.
+Parsing architecture <implementation> of entity <plb_slave_attachment>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd" into library plbv46_slave_single_v1_01_a
+Parsing entity <plbv46_slave_single>.
+Parsing architecture <implementation> of entity <plbv46_slave_single>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family.vhd" into library proc_common_v3_00_a
+Parsing package <family>.
+Parsing package body <family>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/family_support.vhd" into library proc_common_v3_00_a
+Parsing package <family_support>.
+Parsing package body <family_support>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/coregen_comp_defs.vhd" into library proc_common_v3_00_a
+Parsing package <coregen_comp_defs>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/common_types_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <Common_Types>.
+Parsing package body <Common_Types>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/proc_common_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <proc_common_pkg>.
+Parsing package body <proc_common_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/conv_funs_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <conv_funs_pkg>.
+Parsing package body <conv_funs_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_pkg.vhd" into library proc_common_v3_00_a
+Parsing package <ipif_pkg>.
+Parsing package body <ipif_pkg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/async_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <async_fifo_fg>.
+Parsing architecture <implementation> of entity <async_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/sync_fifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <sync_fifo_fg>.
+Parsing architecture <implementation> of entity <sync_fifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/basic_sfifo_fg.vhd" into library proc_common_v3_00_a
+Parsing entity <basic_sfifo_fg>.
+Parsing architecture <implementation> of entity <basic_sfifo_fg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/blk_mem_gen_wrapper.vhd" into library proc_common_v3_00_a
+Parsing entity <blk_mem_gen_wrapper>.
+Parsing architecture <implementation> of entity <blk_mem_gen_wrapper>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/addsub.vhd" into library proc_common_v3_00_a
+Parsing entity <addsub>.
+Parsing architecture <imp> of entity <addsub>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_bit>.
+Parsing architecture <imp> of entity <counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter.vhd" into library proc_common_v3_00_a
+Parsing entity <Counter>.
+Parsing architecture <imp> of entity <counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr>.
+Parsing architecture <imp> of entity <direct_path_cntr>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/direct_path_cntr_ai.vhd" into library proc_common_v3_00_a
+Parsing entity <direct_path_cntr_ai>.
+Parsing architecture <imp> of entity <direct_path_cntr_ai>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/down_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <down_counter>.
+Parsing architecture <simulation> of entity <down_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/eval_timer.vhd" into library proc_common_v3_00_a
+Parsing entity <eval_timer>.
+Parsing architecture <imp> of entity <eval_timer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/inferred_lut4.vhd" into library proc_common_v3_00_a
+Parsing entity <inferred_lut4>.
+Parsing architecture <implementation> of entity <inferred_lut4>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer.vhd" into library proc_common_v3_00_a
+Parsing entity <IPIF_Steer>.
+Parsing architecture <IMP> of entity <ipif_steer>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_steer128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_steer128>.
+Parsing architecture <IMP> of entity <ipif_steer128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ipif_mirror128.vhd" into library proc_common_v3_00_a
+Parsing entity <ipif_mirror128>.
+Parsing architecture <IMP> of entity <ipif_mirror128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg>.
+Parsing architecture <imp> of entity <ld_arith_reg>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/ld_arith_reg2.vhd" into library proc_common_v3_00_a
+Parsing entity <ld_arith_reg2>.
+Parsing architecture <imp> of entity <ld_arith_reg2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot>.
+Parsing architecture <imp> of entity <mux_onehot>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_bits.vhd" into library proc_common_v3_00_a
+Parsing entity <or_bits>.
+Parsing architecture <implementation> of entity <or_bits>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy>.
+Parsing architecture <implementation> of entity <or_muxcy>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate>.
+Parsing architecture <imp> of entity <or_gate>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate128>.
+Parsing architecture <imp> of entity <or_gate128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder_bit>.
+Parsing architecture <implementation> of entity <pf_adder_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_adder.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_adder>.
+Parsing architecture <implementation> of entity <pf_adder>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_bit.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_bit>.
+Parsing architecture <implementation> of entity <pf_counter_bit>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter>.
+Parsing architecture <implementation> of entity <pf_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_counter_top>.
+Parsing architecture <implementation> of entity <pf_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter>.
+Parsing architecture <implementation> of entity <pf_occ_counter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_occ_counter_top.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_occ_counter_top>.
+Parsing architecture <implementation> of entity <pf_occ_counter_top>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pf_dpram_select.vhd" into library proc_common_v3_00_a
+Parsing entity <pf_dpram_select>.
+Parsing architecture <implementation> of entity <pf_dpram_select>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect>.
+Parsing architecture <imp> of entity <pselect>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_mask.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_mask>.
+Parsing architecture <imp> of entity <pselect_mask>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl16_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <srl16_fifo>.
+Parsing architecture <implementation> of entity <srl16_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo.vhd" into library proc_common_v3_00_a
+Parsing entity <SRL_FIFO>.
+Parsing architecture <IMP> of entity <srl_fifo>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo2.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo2>.
+Parsing architecture <imp> of entity <srl_fifo2>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo3.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo3>.
+Parsing architecture <imp> of entity <srl_fifo3>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu>.
+Parsing architecture <imp> of entity <srl_fifo_rbu>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/valid_be.vhd" into library proc_common_v3_00_a
+Parsing entity <valid_be>.
+Parsing architecture <implementation> of entity <valid_be>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_with_enable_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_with_enable_f>.
+Parsing architecture <implementation> of entity <or_with_enable_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/muxf_struct_f.vhd" into library proc_common_v3_00_a
+Parsing entity <muxf_struct>.
+Parsing architecture <imp> of entity <muxf_struct>.
+Parsing entity <muxf_struct_f>.
+Parsing architecture <imp> of entity <muxf_struct_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/cntr_incr_decr_addn_f.vhd" into library proc_common_v3_00_a
+Parsing entity <cntr_incr_decr_addn_f>.
+Parsing architecture <imp> of entity <cntr_incr_decr_addn_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_f>.
+Parsing architecture <behavioral> of entity <dynshreg_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/dynshreg_i_f.vhd" into library proc_common_v3_00_a
+Parsing entity <dynshreg_i_f>.
+Parsing architecture <behavioral> of entity <dynshreg_i_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/mux_onehot_f.vhd" into library proc_common_v3_00_a
+Parsing entity <mux_onehot_f>.
+Parsing architecture <imp> of entity <mux_onehot_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_rbu_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_rbu_f>.
+Parsing architecture <imp> of entity <srl_fifo_rbu_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/srl_fifo_f.vhd" into library proc_common_v3_00_a
+Parsing entity <srl_fifo_f>.
+Parsing architecture <imp> of entity <srl_fifo_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/compare_vectors_f.vhd" into library proc_common_v3_00_a
+Parsing entity <compare_vectors_f>.
+Parsing architecture <imp> of entity <compare_vectors_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd" into library proc_common_v3_00_a
+Parsing entity <pselect_f>.
+Parsing architecture <imp> of entity <pselect_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/counter_f.vhd" into library proc_common_v3_00_a
+Parsing entity <counter_f>.
+Parsing architecture <imp> of entity <counter_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_muxcy_f>.
+Parsing architecture <implementation> of entity <or_muxcy_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate_f.vhd" into library proc_common_v3_00_a
+Parsing entity <or_gate_f>.
+Parsing architecture <imp> of entity <or_gate_f>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/soft_reset.vhd" into library proc_common_v3_00_a
+Parsing entity <soft_reset>.
+Parsing architecture <implementation> of entity <soft_reset>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_master_single_v1_01_a/hdl/vhdl/data_width_adapter.vhd" into library plbv46_master_single_v1_01_a
+Parsing entity <data_width_adapter>.
+Parsing architecture <implementation> of entity <data_width_adapter>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_master_single_v1_01_a/hdl/vhdl/data_mirror_128.vhd" into library plbv46_master_single_v1_01_a
+Parsing entity <data_mirror_128>.
+Parsing architecture <implementation> of entity <data_mirror_128>.
+Parsing VHDL file "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_master_single_v1_01_a/hdl/vhdl/plbv46_master_single.vhd" into library plbv46_master_single_v1_01_a
+Parsing entity <plbv46_master_single>.
+Parsing architecture <implementation> of entity <plbv46_master_single>.
+Parsing VHDL file "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/user_logic.vhd" into library edid_emu_v1_00_a
+Parsing entity <user_logic>.
+Parsing architecture <IMP> of entity <user_logic>.
+Parsing VHDL file "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/edid_emu.vhd" into library edid_emu_v1_00_a
+Parsing entity <edid_emu>.
+Parsing architecture <IMP> of entity <edid_emu>.
+Parsing VHDL file "/opt/Xilinx/Projects/HDMI_Rotator/project/hdl/system_edid_emu_0_wrapper.vhd" into library work
+Parsing entity <system_edid_emu_0_wrapper>.
+Parsing architecture <STRUCTURE> of entity <system_edid_emu_0_wrapper>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <system_edid_emu_0_wrapper> (architecture <STRUCTURE>) from library <work>.
+
+Elaborating entity <edid_emu> (architecture <IMP>) with generics from library <edid_emu_v1_00_a>.
+
+Elaborating entity <plbv46_slave_single> (architecture <implementation>) with generics from library <plbv46_slave_single_v1_01_a>.
+
+Elaborating entity <plb_slave_attachment> (architecture <implementation>) with generics from library <plbv46_slave_single_v1_01_a>.
+
+Elaborating entity <plb_address_decoder> (architecture <IMP>) with generics from library <plbv46_slave_single_v1_01_a>.
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" Line 319: Assignment to cs_s_h_clr ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd" Line 323: Assignment to addr_match_clr ignored, since the identifier is never used
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <pselect_f> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <or_gate128> (architecture <imp>) with generics from library <proc_common_v3_00_a>.
+
+Elaborating entity <or_muxcy> (architecture <implementation>) with generics from library <proc_common_v3_00_a>.
+INFO:HDLCompiler:679 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" Line 711. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd" Line 1025: Assignment to start_data_phase ignored, since the identifier is never used
+
+Elaborating entity <plbv46_master_single> (architecture <implementation>) with generics from library <plbv46_master_single_v1_01_a>.
+
+Elaborating entity <data_width_adapter> (architecture <implementation>) with generics from library <plbv46_master_single_v1_01_a>.
+
+Elaborating entity <data_mirror_128> (architecture <implementation>) with generics from library <plbv46_master_single_v1_01_a>.
+
+Elaborating entity <user_logic> (architecture <IMP>) with generics from library <edid_emu_v1_00_a>.
+WARNING:HDLCompiler:92 - "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/user_logic.vhd" Line 125: state should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/user_logic.vhd" Line 88: Net <operations[0]_OPCODE> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <system_edid_emu_0_wrapper>.
+    Related source file is "/opt/Xilinx/Projects/HDMI_Rotator/project/hdl/system_edid_emu_0_wrapper.vhd".
+    Summary:
+	no macro.
+Unit <system_edid_emu_0_wrapper> synthesized.
+
+Synthesizing Unit <edid_emu>.
+    Related source file is "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/edid_emu.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_DDC_BASEADDR = "10000001011000000000000000000000"
+        C_BASEADDR = "10000001100000000000000000000000"
+        C_HIGHADDR = "10000001100000001111111111111111"
+        C_SPLB_AWIDTH = 32
+        C_SPLB_DWIDTH = 32
+        C_SPLB_NUM_MASTERS = 4
+        C_SPLB_MID_WIDTH = 2
+        C_SPLB_NATIVE_DWIDTH = 32
+        C_SPLB_P2P = 0
+        C_SPLB_SUPPORT_BURSTS = 0
+        C_SPLB_SMALLEST_MASTER = 32
+        C_SPLB_CLK_PERIOD_PS = 13333
+        C_INCLUDE_DPHASE_TIMER = 0
+        C_FAMILY = "spartan6"
+        C_MPLB_AWIDTH = 32
+        C_MPLB_DWIDTH = 32
+        C_MPLB_NATIVE_DWIDTH = 32
+        C_MPLB_P2P = 0
+        C_MPLB_SMALLEST_SLAVE = 32
+        C_MPLB_CLK_PERIOD_PS = 13333
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+INFO:Xst:3210 - "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/edid_emu.vhd" line 428: Output port <Bus2IP_Addr> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/edid_emu.vhd" line 428: Output port <Bus2IP_CS> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/edid_emu.vhd" line 428: Output port <Bus2IP_RNW> of the instance <PLBV46_SLAVE_SINGLE_I> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <edid_emu> synthesized.
+
+Synthesizing Unit <plbv46_slave_single>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plbv46_slave_single.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001100000000000000000000000","0000000000000000000000000000000010000001100000000000000011111111")
+        C_ARD_NUM_CE_ARRAY = (4)
+        C_SPLB_P2P = 0
+        C_BUS2CORE_CLK_RATIO = 1
+        C_INCLUDE_DPHASE_TIMER = 0
+        C_SPLB_MID_WIDTH = 2
+        C_SPLB_NUM_MASTERS = 4
+        C_SPLB_AWIDTH = 32
+        C_SPLB_DWIDTH = 32
+        C_SIPIF_DWIDTH = 32
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_MSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_reqPri> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_TAttribute> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_SAValid> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPrim> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_abort> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_busLock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_lockErr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdBurst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_wrPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_rdPendReq> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <plbv46_slave_single> synthesized.
+
+Synthesizing Unit <plb_slave_attachment>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_slave_attachment.vhd".
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001100000000000000000000000","0000000000000000000000000000000010000001100000000000000011111111")
+        C_ARD_NUM_CE_ARRAY = (4)
+        C_PLB_NUM_MASTERS = 4
+        C_PLB_MID_WIDTH = 2
+        C_SPLB_P2P = 0
+        C_BUS2CORE_CLK_RATIO = 1
+        C_IPIF_ABUS_WIDTH = 32
+        C_IPIF_DBUS_WIDTH = 32
+        C_DPHASE_TIMEOUT = 128
+        C_INCLUDE_DPHASE_TIMER = 0
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_UABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Register <set_sl_busy> equivalent to <sl_addrack_i> has been removed
+    Register <wr_clear_sl_busy> equivalent to <sl_wrdack_i> has been removed
+    Register <sl_wrcomp_i> equivalent to <sl_wrdack_i> has been removed
+    Register <sl_rdcomp_i> equivalent to <rd_clear_sl_busy> has been removed
+    Register <sl_rddack_i> equivalent to <rd_clear_sl_busy> has been removed
+    Found 32-bit register for signal <plb_wrdbus_reg>.
+    Found 2-bit register for signal <plb_masterid_reg>.
+    Found 1-bit register for signal <plb_rnw_reg>.
+    Found 4-bit register for signal <plb_size_reg>.
+    Found 3-bit register for signal <plb_type_reg>.
+    Found 1-bit register for signal <plb_pavalid_reg>.
+    Found 32-bit register for signal <plb_abus_reg>.
+    Found 1-bit register for signal <GEN_FOR_SHARED.addr_cntl_cs>.
+    Found 1-bit register for signal <sl_addrack_i>.
+    Found 1-bit register for signal <sl_rearbitrate_i>.
+    Found 1-bit register for signal <addr_cycle_flush>.
+    Found 32-bit register for signal <master_id>.
+    Found 1-bit register for signal <sl_busy>.
+    Found 4-bit register for signal <sl_mbusy_i>.
+    Found 4-bit register for signal <sl_mrderr_i>.
+    Found 4-bit register for signal <sl_mwrerr_i>.
+    Found 1-bit register for signal <sl_wrdack_i>.
+    Found 1-bit register for signal <rd_clear_sl_busy>.
+    Found 32-bit register for signal <sl_rddbus_i>.
+    Found 1-bit register for signal <bus2ip_rnw_i>.
+    Found 4-bit register for signal <bus2ip_be_i>.
+    Found 32-bit register for signal <bus2ip_addr_i>.
+    Found 4-bit register for signal <plb_be_reg>.
+    Summary:
+	inferred 199 D-type flip-flop(s).
+	inferred  19 Multiplexer(s).
+Unit <plb_slave_attachment> synthesized.
+
+Synthesizing Unit <plb_address_decoder>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_slave_single_v1_01_a/hdl/vhdl/plb_address_decoder.vhd".
+        C_BUS_AWIDTH = 32
+        C_ARD_ADDR_RANGE_ARRAY = ("0000000000000000000000000000000010000001100000000000000000000000","0000000000000000000000000000000010000001100000000000000011111111")
+        C_ARD_NUM_CE_ARRAY = (4)
+        C_SPLB_P2P = 0
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <Address_In_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Address_Valid_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus_RNW_Erly> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 4-bit register for signal <addr_out_s_h>.
+    Found 1-bit register for signal <MEM_DECODE_GEN[0].GEN_PLB_SHARED.cs_out_s_h>.
+    Found 1-bit register for signal <cs_out_i>.
+    Found 1-bit register for signal <decode_hit_reg>.
+    Found 1-bit register for signal <rdce_out_i<0>>.
+    Found 1-bit register for signal <wrce_out_i<0>>.
+    Found 1-bit register for signal <rdce_out_i<1>>.
+    Found 1-bit register for signal <wrce_out_i<1>>.
+    Found 1-bit register for signal <rdce_out_i<2>>.
+    Found 1-bit register for signal <wrce_out_i<2>>.
+    Found 1-bit register for signal <rdce_out_i<3>>.
+    Found 1-bit register for signal <wrce_out_i<3>>.
+    Found 1-bit register for signal <rnw_s_h>.
+    Summary:
+	inferred  16 D-type flip-flop(s).
+Unit <plb_address_decoder> synthesized.
+
+Synthesizing Unit <pselect_f_1>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 24
+        C_AW = 32
+        C_BAR = "10000001100000000000000000000000"
+        C_FAMILY = "nofamily"
+WARNING:Xst:647 - Input <A<24:31>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_1> synthesized.
+
+Synthesizing Unit <pselect_f_2>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "00"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_2> synthesized.
+
+Synthesizing Unit <pselect_f_3>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "01"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_3> synthesized.
+
+Synthesizing Unit <pselect_f_4>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "10"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_4> synthesized.
+
+Synthesizing Unit <pselect_f_5>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/pselect_f.vhd".
+        C_AB = 2
+        C_AW = 2
+        C_BAR = "11"
+        C_FAMILY = "nofamily"
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <pselect_f_5> synthesized.
+
+Synthesizing Unit <or_gate128>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_gate128.vhd".
+        C_OR_WIDTH = 1
+        C_BUS_WIDTH = 1
+        C_USE_LUT_OR = false
+    Summary:
+	no macro.
+Unit <or_gate128> synthesized.
+
+Synthesizing Unit <or_muxcy>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/proc_common_v3_00_a/hdl/vhdl/or_muxcy.vhd".
+        C_NUM_BITS = 1
+    Summary:
+	no macro.
+Unit <or_muxcy> synthesized.
+
+Synthesizing Unit <plbv46_master_single>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_master_single_v1_01_a/hdl/vhdl/plbv46_master_single.vhd".
+        C_MPLB_AWIDTH = 32
+        C_MPLB_DWIDTH = 32
+        C_MPLB_NATIVE_DWIDTH = 32
+        C_FAMILY = "spartan6"
+WARNING:Xst:647 - Input <PLB_MSSize> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MRdWdAddr> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MBusy> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MIRQ> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MRdBTerm> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <PLB_MWrBTerm> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 1-bit register for signal <sig_wrack_reg>.
+    Found 1-bit register for signal <sig_rdack_reg>.
+    Found 1-bit register for signal <sig_wrerr_reg>.
+    Found 1-bit register for signal <sig_rderr_reg>.
+    Found 1-bit register for signal <sig_timeout_reg>.
+    Found 1-bit register for signal <sig_rearb_reg>.
+    Found 1-bit register for signal <M_request>.
+    Found 1-bit register for signal <sig_rdreq_reg>.
+    Found 1-bit register for signal <sig_wrreq_reg>.
+    Found 32-bit register for signal <sig_combined_addrbus>.
+    Found 4-bit register for signal <sig_internal_be_bus>.
+    Found 1-bit register for signal <sig_rnw_reg>.
+    Found 32-bit register for signal <sig_wrdbus_reg>.
+    Found 32-bit register for signal <sig_rddbus_reg>.
+    Found 1-bit register for signal <MD_error>.
+    Found 1-bit register for signal <sig_addrack_reg>.
+    Summary:
+	inferred 112 D-type flip-flop(s).
+Unit <plbv46_master_single> synthesized.
+
+Synthesizing Unit <data_width_adapter>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_master_single_v1_01_a/hdl/vhdl/data_width_adapter.vhd".
+        C_MPLB_DWIDTH = 32
+        C_MIPIF_DWIDTH = 32
+    Summary:
+	no macro.
+Unit <data_width_adapter> synthesized.
+
+Synthesizing Unit <data_mirror_128>.
+    Related source file is "/opt/Xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plbv46_master_single_v1_01_a/hdl/vhdl/data_mirror_128.vhd".
+        C_MPLB_AWIDTH = 32
+        C_MPLB_DWIDTH = 32
+        C_MIPIF_DWIDTH = 32
+WARNING:Xst:647 - Input <Mstr2Mirror_ABus> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <data_mirror_128> synthesized.
+
+Synthesizing Unit <user_logic>.
+    Related source file is "/opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/hdl/vhdl/user_logic.vhd".
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+        C_DDC_GIE = "10000001011000000000000000011100"
+        C_DDC_ISR = "10000001011000000000000000100000"
+        C_DDC_IER = "10000001011000000000000000101000"
+        C_DDC_SOFTR = "10000001011000000000000001000000"
+        C_DDC_CR = "10000001011000000000000100000000"
+        C_DDC_SR = "10000001011000000000000100000100"
+        C_DDC_Tx_FIFO = "10000001011000000000000100001000"
+        C_DDC_Rc_FIFO = "10000001011000000000000100001100"
+        C_DDC_ADR = "10000001011000000000000100010000"
+        C_DDC_Tx_FIFO_OCY = "10000001011000000000000100010100"
+        C_DDC_Rc_FIFO_OCY = "10000001011000000000000100011000"
+        C_DDC_TEN_ADR = "10000001011000000000000100011100"
+        C_DDC_Rc_FIFO_PIRQ = "10000001011000000000000100100000"
+        C_DDC_GPO = "10000001011000000000000100100100"
+        C_SLV_DWIDTH = 32
+        C_MST_AWIDTH = 32
+        C_MST_DWIDTH = 32
+        C_NUM_REG = 4
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:37 - Detected unknown constraint/property "sigis". This constraint/property is not supported by the current software release and will be ignored.
+WARNING:Xst:647 - Input <Bus2IP_Data> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_BE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_RdCE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_WrCE> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <Bus2IP_Mst_Rearbitrate> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <IP2Bus_Data> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:2935 - Signal 'operations[0]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000101000).
+WARNING:Xst:2935 - Signal 'operations[0]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[1]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100010000).
+WARNING:Xst:2935 - Signal 'operations[1]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[2]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000011100).
+WARNING:Xst:2935 - Signal 'operations[2]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[3]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100000000).
+WARNING:Xst:2935 - Signal 'operations[3]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[4]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000100000).
+WARNING:Xst:2935 - Signal 'operations[4]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000100000).
+WARNING:Xst:2935 - Signal 'operations[5]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100001100).
+WARNING:Xst:2935 - Signal 'operations[5]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[6]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000100000).
+WARNING:Xst:2935 - Signal 'operations[6]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000100).
+WARNING:Xst:2935 - Signal 'operations[7]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100010100).
+WARNING:Xst:2935 - Signal 'operations[7]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000001111).
+WARNING:Xst:2935 - Signal 'operations[8]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100001000).
+WARNING:Xst:2935 - Signal 'operations[8]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[9]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000100000).
+WARNING:Xst:2935 - Signal 'operations[9]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000010).
+WARNING:Xst:2935 - Signal 'operations[10]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100000000).
+WARNING:Xst:2935 - Signal 'operations[10]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[11]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000100000000).
+WARNING:Xst:2935 - Signal 'operations[11]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:2935 - Signal 'operations[12]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000100000).
+WARNING:Xst:2935 - Signal 'operations[12]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00010001000100010001000100010001).
+WARNING:Xst:2935 - Signal 'operations[13]_ADDR', unconnected in block 'user_logic', is tied to its initial value (10000001011000000000000000100000).
+WARNING:Xst:2935 - Signal 'operations[13]_FLAG', unconnected in block 'user_logic', is tied to its initial value (00000000000000000000000000000000).
+WARNING:Xst:653 - Signal <IP2Bus_RdAck> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <IP2Bus_WrAck> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <IP2Bus_Error> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <IP2Bus_Mst_Lock> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <IP2Bus_Mst_Reset> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:2935 - Signal 'operations[0]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[1]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[2]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[3]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[4]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'operations[5]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'operations[6]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'operations[7]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'operations[8]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[9]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'operations[10]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[11]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+WARNING:Xst:2935 - Signal 'operations[12]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (0).
+WARNING:Xst:2935 - Signal 'operations[13]_OPCODE', unconnected in block 'user_logic', is tied to its initial value (1).
+    Found 1-bit register for signal <IP2Bus_MstWr_Req>.
+    Found 1-bit register for signal <IP2Bus_MstRd_Req>.
+    Found 32-bit register for signal <operations[0]_DATA>.
+    Found 32-bit register for signal <operations[1]_DATA>.
+    Found 32-bit register for signal <operations[2]_DATA>.
+    Found 32-bit register for signal <operations[3]_DATA>.
+    Found 32-bit register for signal <operations[4]_DATA>.
+    Found 32-bit register for signal <operations[5]_DATA>.
+    Found 32-bit register for signal <operations[6]_DATA>.
+    Found 32-bit register for signal <operations[7]_DATA>.
+    Found 32-bit register for signal <operations[8]_DATA>.
+    Found 32-bit register for signal <operations[9]_DATA>.
+    Found 32-bit register for signal <operations[10]_DATA>.
+    Found 32-bit register for signal <operations[11]_DATA>.
+    Found 32-bit register for signal <operations[12]_DATA>.
+    Found 32-bit register for signal <operations[13]_DATA>.
+    Found 32-bit register for signal <IP2Bus_Mst_Addr>.
+    Found 4-bit register for signal <IP2Bus_Mst_BE>.
+    Found 32-bit register for signal <IP2Bus_MstWr_d>.
+    Found 8-bit register for signal <edid_i>.
+    Found 1-bit register for signal <state<2>>.
+    Found 1-bit register for signal <state<1>>.
+    Found 1-bit register for signal <state<0>>.
+    Found 1-bit register for signal <op<3>>.
+    Found 1-bit register for signal <op<2>>.
+    Found 1-bit register for signal <op<1>>.
+    Found 1-bit register for signal <op<0>>.
+    Found 4-bit adder for signal <op[3]_GND_26_o_add_199_OUT> created at line 201.
+    Found 4-bit adder for signal <op[3]_GND_26_o_add_212_OUT> created at line 210.
+    Found 8-bit adder for signal <edid_i[7]_GND_26_o_add_219_OUT> created at line 223.
+    Found 128x8-bit Read Only RAM for signal <edid_i[6]_GND_26_o_wide_mux_73_OUT>
+    Found 16x68-bit Read Only RAM for signal <_n1392>
+    Found 32-bit 14-to-1 multiplexer for signal <op[3]_X_26_o_wide_mux_77_OUT> created at line 170.
+    Found 32-bit comparator greater for signal <operations[7]_DATA[0]_GND_26_o_LessThan_217_o> created at line 215
+    Found 8-bit comparator greater for signal <edid_i[7]_PWR_26_o_LessThan_218_o> created at line 215
+    Summary:
+	inferred   2 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 533 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  33 Multiplexer(s).
+Unit <user_logic> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 128x8-bit single-port Read Only RAM                   : 1
+ 16x68-bit single-port Read Only RAM                   : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 73
+ 1-bit register                                        : 35
+ 2-bit register                                        : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 24
+ 4-bit register                                        : 11
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 57
+ 1-bit 2-to-1 multiplexer                              : 25
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 14-to-1 multiplexer                            : 1
+ 32-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 22
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <edid_emu>.
+INFO:Xst:3226 - The RAM <USER_LOGIC_I/Mram_edid_i[6]_GND_26_o_wide_mux_73_OUT> will be implemented as a BLOCK RAM, absorbing the following register(s): <USER_LOGIC_I/edid_i>
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <ipif_Bus2IP_Clk> | rise     |
+    |     enA            | connected to internal node          | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <USER_LOGIC_I/op[3]_edid_i[7]_wide_mux_220_OUT<6:0>> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <USER_LOGIC_I/Mram__n1392> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 68-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <USER_LOGIC_I/op> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <edid_emu> synthesized (advanced).
+WARNING:Xst:2677 - Node <addr_out_s_h_3> of sequential type is unconnected in block <plb_address_decoder>.
+WARNING:Xst:2677 - Node <addr_out_s_h_2> of sequential type is unconnected in block <plb_address_decoder>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 128x8-bit single-port block Read Only RAM             : 1
+ 16x68-bit single-port distributed Read Only RAM       : 1
+# Adders/Subtractors                                   : 3
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 857
+ Flip-Flops                                            : 857
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 114
+ 1-bit 14-to-1 multiplexer                             : 32
+ 1-bit 2-to-1 multiplexer                              : 52
+ 3-bit 2-to-1 multiplexer                              : 4
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 22
+ 8-bit 2-to-1 multiplexer                              : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <USER_LOGIC_I/IP2Bus_Mst_BE_3> (without init value) has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1426 - The value init of the FF/Latch master_id_31 hinder the constant cleaning in the block plb_slave_attachment.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1293 - FF/Latch <master_id_30> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_29> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_28> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_27> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_26> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_25> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_24> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_23> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_22> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_21> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_20> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_19> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_18> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_17> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_16> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_15> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_14> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_13> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_12> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_11> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_10> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_9> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_8> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_7> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_6> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_5> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_4> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_3> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <master_id_2> has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/IP2Bus_Mst_BE_2> in Unit <edid_emu> is equivalent to the following 2 FFs/Latches, which will be removed : <USER_LOGIC_I/IP2Bus_Mst_BE_1> <USER_LOGIC_I/IP2Bus_Mst_BE_0> 
+INFO:Xst:2261 - The FF/Latch <PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_2> in Unit <edid_emu> is equivalent to the following 2 FFs/Latches, which will be removed : <PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_1> <PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_0> 
+INFO:Xst:2261 - The FF/Latch <GEN_FOR_SHARED.addr_cntl_cs> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <addr_cycle_flush> 
+INFO:Xst:2261 - The FF/Latch <sl_wrdack_i> in Unit <plb_slave_attachment> is equivalent to the following FF/Latch, which will be removed : <rd_clear_sl_busy> 
+INFO:Xst:2261 - The FF/Latch <sl_rddbus_i_31> in Unit <plb_slave_attachment> is equivalent to the following 31 FFs/Latches, which will be removed : <sl_rddbus_i_30> <sl_rddbus_i_29> <sl_rddbus_i_28> <sl_rddbus_i_27> <sl_rddbus_i_26> <sl_rddbus_i_25> <sl_rddbus_i_24> <sl_rddbus_i_23> <sl_rddbus_i_22> <sl_rddbus_i_21> <sl_rddbus_i_20> <sl_rddbus_i_19> <sl_rddbus_i_18> <sl_rddbus_i_17> <sl_rddbus_i_16> <sl_rddbus_i_15> <sl_rddbus_i_14> <sl_rddbus_i_13> <sl_rddbus_i_12> <sl_rddbus_i_11> <sl_rddbus_i_10> <sl_rddbus_i_9> <sl_rddbus_i_8> <sl_rddbus_i_7> <sl_rddbus_i_6> <sl_rddbus_i_5> <sl_rddbus_i_4> <sl_rddbus_i_3> <sl_rddbus_i_2> <sl_rddbus_i_1> <sl_rddbus_i_0> 
+WARNING:Xst:1710 - FF/Latch <sl_rddbus_i_31> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_wrdack_i> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_1> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_2> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_3> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_4> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_5> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_6> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_8> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_11> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_12> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_13> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_14> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_31> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_30> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_25> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_24> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_22> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_21> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_20> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_19> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_18> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_17> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_16> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_15> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_14> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_13> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_12> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_11> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_8> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_6> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_5> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_4> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_3> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_2> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_1> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_15> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_16> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_17> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_18> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_19> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_20> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_21> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_22> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_24> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_25> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_30> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_31> (without init value) has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sl_mrderr_i_3> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mrderr_i_2> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mrderr_i_1> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mrderr_i_0> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mwrerr_i_3> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mwrerr_i_2> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mwrerr_i_1> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sl_mwrerr_i_0> (without init value) has a constant value of 0 in block <plb_slave_attachment>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/IP2Bus_Mst_Addr_10> in Unit <edid_emu> is equivalent to the following 3 FFs/Latches, which will be removed : <USER_LOGIC_I/IP2Bus_Mst_Addr_9> <USER_LOGIC_I/IP2Bus_Mst_Addr_7> <USER_LOGIC_I/IP2Bus_Mst_Addr_0> 
+INFO:Xst:2261 - The FF/Latch <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_10> in Unit <edid_emu> is equivalent to the following 3 FFs/Latches, which will be removed : <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_9> <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_7> <PLBV46_MASTER_SINGLE_I/sig_combined_addrbus_0> 
+WARNING:Xst:3002 - This design contains one or more registers/latches that are directly
+   incompatible with the Spartan6 architecture. The two primary causes of this is
+   either a register or latch described with both an asynchronous set and
+   asynchronous reset, or a register or latch described with an asynchronous
+   set or reset which however has an initialization value of the opposite 
+   polarity (i.e. asynchronous reset with an initialization value of 1).
+    While this circuit can be built, it creates a sub-optimal implementation
+   in terms of area, power and performance. For a more optimal implementation
+   Xilinx highly recommends one of the following:
+
+          1) Remove either the set or reset from all registers and latches
+             if not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Ensure all registers have the same initialization value as the
+             described asynchronous set or reset polarity
+          4) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Spartan6 asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set or reset and opposite initialization value:
+    USER_LOGIC_I/state_0 in unit <edid_emu>
+    USER_LOGIC_I/op_2 in unit <edid_emu>
+
+
+Optimizing unit <system_edid_emu_0_wrapper> ...
+
+Optimizing unit <edid_emu> ...
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_10> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_10> <USER_LOGIC_I/operations[3]_DATA_10> <USER_LOGIC_I/operations[2]_DATA_10> <USER_LOGIC_I/operations[0]_DATA_10> <USER_LOGIC_I/operations[1]_DATA_10> <USER_LOGIC_I/operations[11]_DATA_10> <USER_LOGIC_I/operations[8]_DATA_10> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_11> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_11> <USER_LOGIC_I/operations[3]_DATA_11> <USER_LOGIC_I/operations[2]_DATA_11> <USER_LOGIC_I/operations[0]_DATA_11> <USER_LOGIC_I/operations[1]_DATA_11> <USER_LOGIC_I/operations[11]_DATA_11> <USER_LOGIC_I/operations[8]_DATA_11> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_12> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_12> <USER_LOGIC_I/operations[3]_DATA_12> <USER_LOGIC_I/operations[2]_DATA_12> <USER_LOGIC_I/operations[0]_DATA_12> <USER_LOGIC_I/operations[1]_DATA_12> <USER_LOGIC_I/operations[11]_DATA_12> <USER_LOGIC_I/operations[8]_DATA_12> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_13> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_13> <USER_LOGIC_I/operations[3]_DATA_13> <USER_LOGIC_I/operations[2]_DATA_13> <USER_LOGIC_I/operations[0]_DATA_13> <USER_LOGIC_I/operations[1]_DATA_13> <USER_LOGIC_I/operations[11]_DATA_13> <USER_LOGIC_I/operations[8]_DATA_13> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_14> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_14> <USER_LOGIC_I/operations[3]_DATA_14> <USER_LOGIC_I/operations[2]_DATA_14> <USER_LOGIC_I/operations[0]_DATA_14> <USER_LOGIC_I/operations[1]_DATA_14> <USER_LOGIC_I/operations[11]_DATA_14> <USER_LOGIC_I/operations[8]_DATA_14> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_15> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_15> <USER_LOGIC_I/operations[3]_DATA_15> <USER_LOGIC_I/operations[2]_DATA_15> <USER_LOGIC_I/operations[0]_DATA_15> <USER_LOGIC_I/operations[1]_DATA_15> <USER_LOGIC_I/operations[11]_DATA_15> <USER_LOGIC_I/operations[8]_DATA_15> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_20> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_20> <USER_LOGIC_I/operations[3]_DATA_20> <USER_LOGIC_I/operations[2]_DATA_20> <USER_LOGIC_I/operations[0]_DATA_20> <USER_LOGIC_I/operations[1]_DATA_20> <USER_LOGIC_I/operations[11]_DATA_20> <USER_LOGIC_I/operations[8]_DATA_20> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_16> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_16> <USER_LOGIC_I/operations[3]_DATA_16> <USER_LOGIC_I/operations[2]_DATA_16> <USER_LOGIC_I/operations[0]_DATA_16> <USER_LOGIC_I/operations[1]_DATA_16> <USER_LOGIC_I/operations[11]_DATA_16> <USER_LOGIC_I/operations[8]_DATA_16> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_21> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_21> <USER_LOGIC_I/operations[3]_DATA_21> <USER_LOGIC_I/operations[2]_DATA_21> <USER_LOGIC_I/operations[0]_DATA_21> <USER_LOGIC_I/operations[1]_DATA_21> <USER_LOGIC_I/operations[11]_DATA_21> <USER_LOGIC_I/operations[8]_DATA_21> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_17> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_17> <USER_LOGIC_I/operations[3]_DATA_17> <USER_LOGIC_I/operations[2]_DATA_17> <USER_LOGIC_I/operations[0]_DATA_17> <USER_LOGIC_I/operations[1]_DATA_17> <USER_LOGIC_I/operations[11]_DATA_17> <USER_LOGIC_I/operations[8]_DATA_17> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_22> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_22> <USER_LOGIC_I/operations[3]_DATA_22> <USER_LOGIC_I/operations[2]_DATA_22> <USER_LOGIC_I/operations[0]_DATA_22> <USER_LOGIC_I/operations[1]_DATA_22> <USER_LOGIC_I/operations[11]_DATA_22> <USER_LOGIC_I/operations[8]_DATA_22> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_18> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_18> <USER_LOGIC_I/operations[3]_DATA_18> <USER_LOGIC_I/operations[2]_DATA_18> <USER_LOGIC_I/operations[0]_DATA_18> <USER_LOGIC_I/operations[1]_DATA_18> <USER_LOGIC_I/operations[11]_DATA_18> <USER_LOGIC_I/operations[8]_DATA_18> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_23> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_23> <USER_LOGIC_I/operations[3]_DATA_23> <USER_LOGIC_I/operations[2]_DATA_23> <USER_LOGIC_I/operations[0]_DATA_23> <USER_LOGIC_I/operations[1]_DATA_23> <USER_LOGIC_I/operations[11]_DATA_23> <USER_LOGIC_I/operations[8]_DATA_23> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_19> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_19> <USER_LOGIC_I/operations[3]_DATA_19> <USER_LOGIC_I/operations[2]_DATA_19> <USER_LOGIC_I/operations[0]_DATA_19> <USER_LOGIC_I/operations[1]_DATA_19> <USER_LOGIC_I/operations[11]_DATA_19> <USER_LOGIC_I/operations[8]_DATA_19> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_24> in Unit <edid_emu> is equivalent to the following 6 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_24> <USER_LOGIC_I/operations[3]_DATA_24> <USER_LOGIC_I/operations[2]_DATA_24> <USER_LOGIC_I/operations[0]_DATA_24> <USER_LOGIC_I/operations[11]_DATA_24> <USER_LOGIC_I/operations[8]_DATA_24> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_25> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_25> <USER_LOGIC_I/operations[3]_DATA_25> <USER_LOGIC_I/operations[2]_DATA_25> <USER_LOGIC_I/operations[0]_DATA_25> <USER_LOGIC_I/operations[1]_DATA_25> <USER_LOGIC_I/operations[11]_DATA_25> <USER_LOGIC_I/operations[8]_DATA_25> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[13]_DATA_30> in Unit <edid_emu> is equivalent to the following 5 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[3]_DATA_30> <USER_LOGIC_I/operations[2]_DATA_30> <USER_LOGIC_I/operations[1]_DATA_30> <USER_LOGIC_I/operations[11]_DATA_30> <USER_LOGIC_I/operations[8]_DATA_30> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_30> in Unit <edid_emu> is equivalent to the following FF/Latch, which will be removed : <USER_LOGIC_I/operations[0]_DATA_30> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_26> in Unit <edid_emu> is equivalent to the following 5 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_26> <USER_LOGIC_I/operations[3]_DATA_26> <USER_LOGIC_I/operations[2]_DATA_26> <USER_LOGIC_I/operations[11]_DATA_26> <USER_LOGIC_I/operations[8]_DATA_26> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[0]_DATA_26> in Unit <edid_emu> is equivalent to the following FF/Latch, which will be removed : <USER_LOGIC_I/operations[1]_DATA_26> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[13]_DATA_31> in Unit <edid_emu> is equivalent to the following 4 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[2]_DATA_31> <USER_LOGIC_I/operations[0]_DATA_31> <USER_LOGIC_I/operations[1]_DATA_31> <USER_LOGIC_I/operations[8]_DATA_31> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_31> in Unit <edid_emu> is equivalent to the following 2 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[3]_DATA_31> <USER_LOGIC_I/operations[11]_DATA_31> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_27> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_27> <USER_LOGIC_I/operations[3]_DATA_27> <USER_LOGIC_I/operations[2]_DATA_27> <USER_LOGIC_I/operations[0]_DATA_27> <USER_LOGIC_I/operations[1]_DATA_27> <USER_LOGIC_I/operations[11]_DATA_27> <USER_LOGIC_I/operations[8]_DATA_27> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_28> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_28> <USER_LOGIC_I/operations[3]_DATA_28> <USER_LOGIC_I/operations[2]_DATA_28> <USER_LOGIC_I/operations[0]_DATA_28> <USER_LOGIC_I/operations[1]_DATA_28> <USER_LOGIC_I/operations[11]_DATA_28> <USER_LOGIC_I/operations[8]_DATA_28> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_29> in Unit <edid_emu> is equivalent to the following 6 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_29> <USER_LOGIC_I/operations[3]_DATA_29> <USER_LOGIC_I/operations[2]_DATA_29> <USER_LOGIC_I/operations[1]_DATA_29> <USER_LOGIC_I/operations[11]_DATA_29> <USER_LOGIC_I/operations[8]_DATA_29> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_0> in Unit <edid_emu> is equivalent to the following 6 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_0> <USER_LOGIC_I/operations[3]_DATA_0> <USER_LOGIC_I/operations[0]_DATA_0> <USER_LOGIC_I/operations[1]_DATA_0> <USER_LOGIC_I/operations[11]_DATA_0> <USER_LOGIC_I/operations[8]_DATA_0> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_1> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_1> <USER_LOGIC_I/operations[3]_DATA_1> <USER_LOGIC_I/operations[2]_DATA_1> <USER_LOGIC_I/operations[0]_DATA_1> <USER_LOGIC_I/operations[1]_DATA_1> <USER_LOGIC_I/operations[11]_DATA_1> <USER_LOGIC_I/operations[8]_DATA_1> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_2> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_2> <USER_LOGIC_I/operations[3]_DATA_2> <USER_LOGIC_I/operations[2]_DATA_2> <USER_LOGIC_I/operations[0]_DATA_2> <USER_LOGIC_I/operations[1]_DATA_2> <USER_LOGIC_I/operations[11]_DATA_2> <USER_LOGIC_I/operations[8]_DATA_2> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_3> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_3> <USER_LOGIC_I/operations[3]_DATA_3> <USER_LOGIC_I/operations[2]_DATA_3> <USER_LOGIC_I/operations[0]_DATA_3> <USER_LOGIC_I/operations[1]_DATA_3> <USER_LOGIC_I/operations[11]_DATA_3> <USER_LOGIC_I/operations[8]_DATA_3> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_4> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_4> <USER_LOGIC_I/operations[3]_DATA_4> <USER_LOGIC_I/operations[2]_DATA_4> <USER_LOGIC_I/operations[0]_DATA_4> <USER_LOGIC_I/operations[1]_DATA_4> <USER_LOGIC_I/operations[11]_DATA_4> <USER_LOGIC_I/operations[8]_DATA_4> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_5> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_5> <USER_LOGIC_I/operations[3]_DATA_5> <USER_LOGIC_I/operations[2]_DATA_5> <USER_LOGIC_I/operations[0]_DATA_5> <USER_LOGIC_I/operations[1]_DATA_5> <USER_LOGIC_I/operations[11]_DATA_5> <USER_LOGIC_I/operations[8]_DATA_5> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_6> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_6> <USER_LOGIC_I/operations[3]_DATA_6> <USER_LOGIC_I/operations[2]_DATA_6> <USER_LOGIC_I/operations[0]_DATA_6> <USER_LOGIC_I/operations[1]_DATA_6> <USER_LOGIC_I/operations[11]_DATA_6> <USER_LOGIC_I/operations[8]_DATA_6> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_7> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_7> <USER_LOGIC_I/operations[3]_DATA_7> <USER_LOGIC_I/operations[2]_DATA_7> <USER_LOGIC_I/operations[0]_DATA_7> <USER_LOGIC_I/operations[1]_DATA_7> <USER_LOGIC_I/operations[11]_DATA_7> <USER_LOGIC_I/operations[8]_DATA_7> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_8> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_8> <USER_LOGIC_I/operations[3]_DATA_8> <USER_LOGIC_I/operations[2]_DATA_8> <USER_LOGIC_I/operations[0]_DATA_8> <USER_LOGIC_I/operations[1]_DATA_8> <USER_LOGIC_I/operations[11]_DATA_8> <USER_LOGIC_I/operations[8]_DATA_8> 
+INFO:Xst:2261 - The FF/Latch <USER_LOGIC_I/operations[10]_DATA_9> in Unit <edid_emu> is equivalent to the following 7 FFs/Latches, which will be removed : <USER_LOGIC_I/operations[13]_DATA_9> <USER_LOGIC_I/operations[3]_DATA_9> <USER_LOGIC_I/operations[2]_DATA_9> <USER_LOGIC_I/operations[0]_DATA_9> <USER_LOGIC_I/operations[1]_DATA_9> <USER_LOGIC_I/operations[11]_DATA_9> <USER_LOGIC_I/operations[8]_DATA_9> 
+WARNING:Xst:1293 - FF/Latch <USER_LOGIC_I/operations[10]_DATA_12> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_11> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_10> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_9> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_8> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_7> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_6> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_5> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_4> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_3> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_2> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_1> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_0> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[13]_DATA_31> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[13]_DATA_30> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[2]_DATA_0> has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[0]_DATA_29> has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[0]_DATA_26> has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[1]_DATA_24> has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_31> has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_30> has a constant value of 1 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_29> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_28> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_27> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_26> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_25> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_24> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_23> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_22> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_21> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_20> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_19> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_18> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_17> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_16> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_15> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_14> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <USER_LOGIC_I/operations[10]_DATA_13> has a constant value of 0 in block <edid_emu>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <plb_slave_attachment> ...
+
+Optimizing unit <plb_address_decoder> ...
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_2> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_be_i_3> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_rnw_i> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_2> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_3> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_4> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_5> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_6> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_7> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_8> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_9> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_10> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_11> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_12> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_13> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_14> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_15> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_16> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_17> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_18> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_19> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_20> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_21> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_22> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_23> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_24> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_25> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_26> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_27> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_28> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_29> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_30> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/bus2ip_addr_i_31> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_2> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_3> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_4> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_5> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_6> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_7> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_8> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_9> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_10> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_11> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_12> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_13> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_14> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_15> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_16> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_17> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_18> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_19> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_20> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_21> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_22> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_23> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_24> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_25> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_26> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_27> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_28> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_29> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_30> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_wrdbus_reg_31> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_rnw_reg> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_2> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_be_reg_3> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_24> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_25> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_26> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_27> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_28> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_29> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_30> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/plb_abus_reg_31> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_2> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/wrce_out_i_3> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_2> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rdce_out_i_3> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/cs_out_i_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/decode_hit_reg> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/MEM_DECODE_GEN<0>.GEN_PLB_SHARED.cs_out_s_h_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/rnw_s_h> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/addr_out_s_h_0> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+WARNING:Xst:2677 - Node <edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/I_DECODER/addr_out_s_h_1> of sequential type is unconnected in block <system_edid_emu_0_wrapper>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block system_edid_emu_0_wrapper, actual ratio is 2.
+WARNING:Xst:1426 - The value init of the FF/Latch edid_emu_0/USER_LOGIC_I/state_0_LD hinder the constant cleaning in the block system_edid_emu_0_wrapper.
+   You should achieve better results by setting this init to 1.
+FlipFlop edid_emu_0/USER_LOGIC_I/op_0 has been replicated 1 time(s)
+FlipFlop edid_emu_0/USER_LOGIC_I/op_1 has been replicated 2 time(s)
+FlipFlop edid_emu_0/USER_LOGIC_I/op_3 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 382
+ Flip-Flops                                            : 382
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : system_edid_emu_0_wrapper.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 612
+#      GND                         : 1
+#      INV                         : 2
+#      LUT2                        : 8
+#      LUT3                        : 62
+#      LUT4                        : 170
+#      LUT5                        : 69
+#      LUT6                        : 290
+#      MUXF7                       : 9
+#      VCC                         : 1
+# FlipFlops/Latches                : 383
+#      FD                          : 7
+#      FDC                         : 9
+#      FDE                         : 238
+#      FDP                         : 2
+#      FDR                         : 82
+#      FDRE                        : 44
+#      LD                          : 1
+# RAMS                             : 1
+#      RAMB8BWER                   : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx45csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             383  out of  54576     0%  
+ Number of Slice LUTs:                  601  out of  27288     2%  
+    Number used as Logic:               601  out of  27288     2%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    720
+   Number with an unused Flip Flop:     337  out of    720    46%  
+   Number with an unused LUT:           119  out of    720    16%  
+   Number of fully used LUT-FF pairs:   264  out of    720    36%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                         397
+ Number of bonded IOBs:                   0  out of    218     0%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:                1  out of    116     0%  
+    Number using Block RAM only:          1
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+Clock Signal                                                                                             | Clock buffer(FF name)                                   | Load  |
+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+MPLB_Clk                                                                                                 | NONE(edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_wrdbus_reg_0)| 83    |
+SPLB_Clk                                                                                                 | NONE(edid_emu_0/USER_LOGIC_I/IP2Bus_MstWr_d_0)          | 300   |
+edid_emu_0/USER_LOGIC_I/iic_intr_PWR_26_o_AND_27_o(edid_emu_0/USER_LOGIC_I/iic_intr_PWR_26_o_AND_27_o1:O)| NONE(*)(edid_emu_0/USER_LOGIC_I/state_0_LD)             | 1     |
+---------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 7.042ns (Maximum Frequency: 142.005MHz)
+   Minimum input arrival time before clock: 3.778ns
+   Maximum output required time after clock: 0.525ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MPLB_Clk'
+  Clock period: 4.569ns (frequency: 218.889MHz)
+  Total number of paths / destination ports: 213 / 83
+-------------------------------------------------------------------------
+Delay:               4.569ns (Levels of Logic = 2)
+  Source:            edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_timeout_reg (FF)
+  Destination:       edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg (FF)
+  Source Clock:      MPLB_Clk rising
+  Destination Clock: MPLB_Clk rising
+
+  Data Path: edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_timeout_reg to edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.525   1.355  edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_timeout_reg (edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_timeout_reg)
+     LUT4:I1->O           41   0.235   2.126  edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_clear_qualifiers1 (edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_clear_qualifiers)
+     LUT6:I0->O            1   0.254   0.000  edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg_rstpot (edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg_rstpot)
+     FD:D                      0.074          edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg
+    ----------------------------------------
+    Total                      4.569ns (1.088ns logic, 3.481ns route)
+                                       (23.8% logic, 76.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SPLB_Clk'
+  Clock period: 7.042ns (frequency: 142.005MHz)
+  Total number of paths / destination ports: 4570 / 531
+-------------------------------------------------------------------------
+Delay:               7.042ns (Levels of Logic = 7)
+  Source:            edid_emu_0/USER_LOGIC_I/op_2_C_2 (FF)
+  Destination:       edid_emu_0/USER_LOGIC_I/op_0 (FF)
+  Source Clock:      SPLB_Clk rising
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: edid_emu_0/USER_LOGIC_I/op_2_C_2 to edid_emu_0/USER_LOGIC_I/op_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              16   0.525   1.290  edid_emu_0/USER_LOGIC_I/op_2_C_2 (edid_emu_0/USER_LOGIC_I/op_2_C_2)
+     LUT3:I1->O            4   0.250   1.259  edid_emu_0/USER_LOGIC_I/op_21_1 (edid_emu_0/USER_LOGIC_I/op_21)
+     LUT6:I0->O            1   0.254   0.000  edid_emu_0/USER_LOGIC_I/op<3>11_G (N130)
+     MUXF7:I1->O           3   0.175   0.874  edid_emu_0/USER_LOGIC_I/op<3>11 (edid_emu_0/USER_LOGIC_I/op[3]_X_26_o_wide_mux_77_OUT<0>)
+     LUT5:I3->O            1   0.250   0.000  edid_emu_0/USER_LOGIC_I/op[3]_GND_26_o_not_equal_209_o5_G (N140)
+     MUXF7:I1->O           2   0.175   0.726  edid_emu_0/USER_LOGIC_I/op[3]_GND_26_o_not_equal_209_o5 (edid_emu_0/USER_LOGIC_I/op[3]_GND_26_o_not_equal_209_o5)
+     LUT6:I5->O            1   0.254   0.682  edid_emu_0/USER_LOGIC_I/op[3]_GND_26_o_not_equal_209_o6 (edid_emu_0/USER_LOGIC_I/op[3]_GND_26_o_not_equal_209_o)
+     LUT6:I5->O            2   0.254   0.000  edid_emu_0/USER_LOGIC_I/Mmux_state[2]_op[3]_mux_245_OUT34 (edid_emu_0/USER_LOGIC_I/state[2]_op[3]_mux_245_OUT<0>)
+     FDC:D                     0.074          edid_emu_0/USER_LOGIC_I/op_0
+    ----------------------------------------
+    Total                      7.042ns (2.211ns logic, 4.831ns route)
+                                       (31.4% logic, 68.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'MPLB_Clk'
+  Total number of paths / destination ports: 123 / 121
+-------------------------------------------------------------------------
+Offset:              2.985ns (Levels of Logic = 2)
+  Source:            MPLB_Rst (PAD)
+  Destination:       edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg (FF)
+  Destination Clock: MPLB_Clk rising
+
+  Data Path: MPLB_Rst to edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT4:I0->O           41   0.254   2.126  edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_clear_qualifiers1 (edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_clear_qualifiers)
+     LUT6:I0->O            1   0.254   0.000  edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg_rstpot (edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg_rstpot)
+     FD:D                      0.074          edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_rnw_reg
+    ----------------------------------------
+    Total                      2.985ns (0.859ns logic, 2.126ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 372 / 351
+-------------------------------------------------------------------------
+Offset:              3.778ns (Levels of Logic = 3)
+  Source:            SPLB_Rst (PAD)
+  Destination:       edid_emu_0_USER_LOGIC_I/Mram_edid_i[6]_GND_26_o_wide_mux_73_OUT (RAM)
+  Destination Clock: SPLB_Clk rising
+
+  Data Path: SPLB_Rst to edid_emu_0_USER_LOGIC_I/Mram_edid_i[6]_GND_26_o_wide_mux_73_OUT
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT5:I0->O            2   0.254   1.002  edid_emu_0/USER_LOGIC_I/_n1342_SW0 (N62)
+     LUT6:I2->O            1   0.254   0.681  edid_emu_0/USER_LOGIC_I/_n1342 (edid_emu_0/USER_LOGIC_I/_n1342)
+     INV:I->O              1   0.255   0.681  edid_emu_0_USER_LOGIC_I/_n1342_inv_INV_0 (edid_emu_0_USER_LOGIC_I/_n1342_inv)
+     RAMB8BWER:ENAWREN         0.220          edid_emu_0_USER_LOGIC_I/Mram_edid_i[6]_GND_26_o_wide_mux_73_OUT
+    ----------------------------------------
+    Total                      3.778ns (1.414ns logic, 2.364ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SPLB_Clk'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.525ns (Levels of Logic = 0)
+  Source:            edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0 (FF)
+  Destination:       Sl_MBusy<0> (PAD)
+  Source Clock:      SPLB_Clk rising
+
+  Data Path: edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0 to Sl_MBusy<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.525   0.000  edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0 (edid_emu_0/PLBV46_SLAVE_SINGLE_I/I_SLAVE_ATTACHMENT/sl_mbusy_i_0)
+    ----------------------------------------
+    Total                      0.525ns (0.525ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'MPLB_Clk'
+  Total number of paths / destination ports: 48 / 48
+-------------------------------------------------------------------------
+Offset:              0.525ns (Levels of Logic = 0)
+  Source:            edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_2 (FF)
+  Destination:       M_BE<0> (PAD)
+  Source Clock:      MPLB_Clk rising
+
+  Data Path: edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_2 to M_BE<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             0   0.525   0.000  edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_2 (edid_emu_0/PLBV46_MASTER_SINGLE_I/sig_internal_be_bus_2)
+    ----------------------------------------
+    Total                      0.525ns (0.525ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock MPLB_Clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+MPLB_Clk       |    4.569|         |         |         |
+SPLB_Clk       |    3.753|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock SPLB_Clk
+--------------------------------------------------+---------+---------+---------+---------+
+                                                  | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                      |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------------------------------------+---------+---------+---------+---------+
+MPLB_Clk                                          |    6.609|         |         |         |
+SPLB_Clk                                          |    7.042|         |         |         |
+edid_emu_0/USER_LOGIC_I/iic_intr_PWR_26_o_AND_27_o|         |    7.331|         |         |
+--------------------------------------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.79 secs
+ 
+--> 
+
+
+Total memory usage is 522492 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  324 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+

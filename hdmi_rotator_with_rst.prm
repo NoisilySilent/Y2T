@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.20131013
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o /opt/Xilinx/Projects/HDMI_Rotator_75000KHz_clock_generator//hdmi_rotator_with_rst -s 16384 -u 0000 /opt/Xilinx/Projects/HDMI_Rotator_75000KHz_clock_generator/project/implementation/download_cclktemp.bit -spi 
+
+PROM /opt/Xilinx/Projects/HDMI_Rotator_75000KHz_clock_generator/hdmi_rotator_with_rst.prm map: Sun May  9 12:59:19 2021
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          16384K
+PROM start    0000:0000
+PROM end      00ff:ffff
+PROM checksum e9892dc9
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0016:a89f     May  9 12:59:13 2021 /opt/Xilinx/Projects/HDMI_Rotator_75000KHz_clock_generator/project/implementation/download_cclktemp.bit

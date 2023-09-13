@@ -1,0 +1,243 @@
+
+bitinit version Xilinx EDK 14.7 Build EDK_P.20131013
+Copyright (c) Xilinx Inc. 2002.
+
+Parsing MHS File system.mhs...
+
+Overriding IP level properties ...
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_BASEFAMILY value to spartan6 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 155 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_SPEEDGRADE_INT value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 160 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_IODELAY_GRP value to MCB_DDR2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 182 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_USE_MCB_S6_PHY value to 1 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 219 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_DATA_DEPTH value to 64 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 266 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_DATA_WIDTH value to 16 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 267 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_NUM_BANK_BITS value to 3 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 268 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_NUM_COL_BITS value to 10 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 270 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRAS value to 45000 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 271 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRASMAX value to 70200000 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 272 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRC value to 57500 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 273 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRCD value to 12500 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 274 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TWR value to 15000 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 276 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRP value to 12500 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 277 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TMRD value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 278 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRRD value to 10000 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 279 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TRFC value to 127500 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 280 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TREFI value to 7800000 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 281 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TCCD value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 283 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_TWTR value to 7500 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 284 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_A_FMAX value to 200.0 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 290 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_A value to 3 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 291 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_B_FMAX value to 266.0 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 292 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_B value to 4 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 293 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_C_FMAX value to 400.0 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 294 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_C value to 5 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 295 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_PART_CAS_D_FMAX value to 1.0 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 296 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_BANKADDR_WIDTH value to 3 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 309 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_DM_WIDTH value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 312 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_MEM_DQS_WIDTH value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 313 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_PIM1_DATA_WIDTH value to 32 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 405 
+INFO:EDK:4130 - IPNAME: mpmc, INSTANCE:MCB_DDR2 - tcl is overriding PARAMETER
+   C_PIM2_DATA_WIDTH value to 32 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mpmc_v6_06_a/data/mpmc
+   _v2_1_0.mpd line 456 
+
+Computing clock values...
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   ilmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+INFO:EDK:740 - Cannot determine the input clock associated with port :
+   dlmb_cntlr:BRAM_Clk_A. Clock DRCs will not be performed on this core and
+   cores connected to it. 
+
+Performing IP level DRCs on properties...
+
+Running DRC Tcl procedures for OPTION IPLEVEL_DRC_PROC...
+Address Map for Processor microblaze_0
+  (0000000000-0x00003fff) dlmb_cntlr	dlmb
+  (0000000000-0x00003fff) ilmb_cntlr	ilmb
+  (0x48000000-0x4fffffff) MCB_DDR2	microblaze_0_DXCL
+  (0x48000000-0x4fffffff) MCB_DDR2	microblaze_0_IXCL
+  (0x81600000-0x8160ffff) xps_iic_0	mb_plb
+  (0x81800000-0x8180ffff) edid_emu_0	mb_plb
+  (0x82600000-0x8260ffff) xps_iic_1	mb_plb
+  (0x82800000-0x8280ffff) edid_emu_1	mb_plb
+  (0x84400000-0x8440ffff) mdm_0	mb_plb
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_NUM_SLAVES value to 5 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/data/p
+   lb_v46_v2_1_0.mpd line 80 
+INFO:EDK:4130 - IPNAME: plb_v46, INSTANCE:mb_plb - tool is overriding PARAMETER
+   C_PLBV46_DWIDTH value to 32 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/plb_v46_v1_05_a/data/p
+   lb_v46_v2_1_0.mpd line 83 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:ilmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/data/l
+   mb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: lmb_v10, INSTANCE:dlmb - tool is overriding PARAMETER
+   C_LMB_NUM_SLAVES value to 1 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/lmb_v10_v2_00_b/data/l
+   mb_v10_v2_1_0.mpd line 82 
+INFO:EDK:4130 - IPNAME: bram_block, INSTANCE:lmb_bram - tool is overriding
+   PARAMETER C_MEMSIZE value to 0x4000 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/bram_block_v1_00_a/dat
+   a/bram_block_v2_1_0.mpd line 78 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_MID_WIDTH value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_10_a/data/mdm_v
+   2_1_0.mpd line 118 
+INFO:EDK:4130 - IPNAME: mdm, INSTANCE:mdm_0 - tool is overriding PARAMETER
+   C_SPLB_NUM_MASTERS value to 4 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/mdm_v2_10_a/data/mdm_v
+   2_1_0.mpd line 119 
+INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/data/x
+   ps_iic_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 4 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/data/x
+   ps_iic_v2_1_0.mpd line 85 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_0 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_0 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 4 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 30 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_0 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 2 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_0 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 32 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 40 
+INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_1 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 2 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/data/x
+   ps_iic_v2_1_0.mpd line 84 
+INFO:EDK:4130 - IPNAME: xps_iic, INSTANCE:xps_iic_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 4 -
+   /xilinx/14.7/ISE_DS/EDK/hw/XilinxProcessorIPLib/pcores/xps_iic_v2_03_a/data/x
+   ps_iic_v2_1_0.mpd line 85 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_1 - tool is overriding
+   PARAMETER C_SPLB_DWIDTH value to 32 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 29 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_1 - tool is overriding
+   PARAMETER C_SPLB_NUM_MASTERS value to 4 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 30 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_1 - tool is overriding
+   PARAMETER C_SPLB_MID_WIDTH value to 2 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 31 
+INFO:EDK:4130 - IPNAME: edid_emu, INSTANCE:edid_emu_1 - tool is overriding
+   PARAMETER C_MPLB_DWIDTH value to 32 -
+   /opt/Xilinx/Projects/HDMI_Rotator/project/pcores/edid_emu_v1_00_a/data/edid_e
+   mu_v2_1_0.mpd line 40 
+
+Checking platform address map ...
+
+Initializing Memory...
+Running Data2Mem with the following command:
+data2mem -bm implementation/system_bd -p xc6slx45csg324-2 -bt
+implementation/system.bit  -bd bootloops/microblaze_0.elf tag microblaze_0  -o b
+implementation/download.bit 
+Memory Initialization completed successfully.
+

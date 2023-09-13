@@ -1,0 +1,11 @@
+##############################################################################
+## Filename:          /opt/Xilinx/Projects/PLB_EDID/pcores/edid_emu_v1_00_a/data/edid_emu_v2_1_0.pao
+## Description:       Peripheral Analysis Order
+## Date:              Tue May  4 21:44:58 2021 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+lib proc_common_v3_00_a  all 
+lib plbv46_slave_single_v1_01_a  all 
+lib plbv46_master_single_v1_01_a  all 
+lib edid_emu_v1_00_a user_logic vhdl
+lib edid_emu_v1_00_a edid_emu vhdl
