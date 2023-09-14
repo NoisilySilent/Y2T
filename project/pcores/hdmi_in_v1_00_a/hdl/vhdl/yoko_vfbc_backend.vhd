@@ -152,7 +152,7 @@ begin
         if (rLine > 0) then
           rLine <= rLine - 1;
         else
-          rLine <= (others => '1')";
+          rLine <= (others => '1');
           if (rColumn < 639) then
             rColumn <= rColumn + 1;
           else
@@ -219,7 +219,7 @@ begin
   -- VFBC Write Logic
   --------------------------------
 
-  YOKO_VFBC_WD_WRITE <= YOKO_DE;
+  YOKO_VFBC_WD_WRITE <= pixel_de;
   YOKO_VFBC_WD_DATA <= pixel_dout;
 
   YOKO_DE_DELAY_PROC : process (pxlclk) is
